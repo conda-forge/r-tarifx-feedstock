@@ -1,6 +1,5 @@
 {% set version = '1.0.6.2' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-tarifx
@@ -13,8 +12,7 @@ source:
   sha256: 89d031db00a94ae57c7ace0d9aa39ba2f960f96fd48d2d1e4c7ebb62a2969b15
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  number: 4
   noarch: generic
   rpaths:
     - lib/R/lib/
